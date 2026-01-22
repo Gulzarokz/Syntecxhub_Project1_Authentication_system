@@ -1,6 +1,5 @@
 import user from "../models/model.user.js";
 import bcrypt from "bcrypt";
-import jwt from "jsonwebtoken"
 
 export const signup = async (req, res) => {
     try {
@@ -65,13 +64,7 @@ export const login = async (req, res) => {
             })
         }
 
-        const token = await jwt.sign({ userId: userExist._id }, process.env.JWT_SECRET, { expiresIn: "7d" })
-
-        return res.status(200).cookie("token", token, {
-            httpOnly: true,
-            sameSite: "strict",
-            maxAge: 24 * 60 * 60 * 1000
-        }).json({
+        return res.status(200).json({
             success: true,
             message: "User login successfully"
         })
