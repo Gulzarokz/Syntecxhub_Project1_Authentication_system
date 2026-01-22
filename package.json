@@ -1,0 +1,30 @@
+{
+  "name": "syntecxhub_project1_authentication_system",
+  "version": "1.0.0",
+  "description": "",
+  "main": "Server.js",
+  "type": "module",
+  "scripts": {
+    "dev": "nodemon Server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Gulzarokz/Syntecxhub_Project1_Authentication_system.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Gulzarokz/Syntecxhub_Project1_Authentication_system/issues"
+  },
+  "homepage": "https://github.com/Gulzarokz/Syntecxhub_Project1_Authentication_system#readme",
+  "dependencies": {
+    "bcrypt": "^6.0.0",
+    "dotenv": "^17.2.3",
+    "express": "^5.2.1",
+    "mongoose": "^9.1.4"
+  },
+  "devDependencies": {
+    "nodemon": "^3.1.11"
+  }
+}
